@@ -1,1 +1,30 @@
-<p>grafico works!</p>
+<style>
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 5px;;
+  }
+  li {
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+</style>
+
+<h1>Gráficos</h1>
+<ul>
+  <li><ngx-charts-bar-horizontal [view]="[700, 400]" [gradient]="false" [legend]="true" [yAxis]="true" [xAxis]="true"
+      [results]="data"></ngx-charts-bar-horizontal></li>
+
+  <li><ngx-charts-line-chart [view]="[700, 400]" [results]="dataLine" [legend]="true" [xAxis]="true" [yAxis]="true">
+    </ngx-charts-line-chart>
+  </li>
+</ul>

@@ -1,1 +1,15 @@
-<p>incrementar works!</p>
+<style>
+  button {
+    background: var(--color-primary, #0f824d);
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+</style>
+
+<button (click)="incrementar()">Sumar 5</button>
